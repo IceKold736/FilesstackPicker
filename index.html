@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Filestack Picker</title>
+	  <style type="text/css">
+	  	#main-header{
+	  		border-radius: 25px;
+	  		text-align:center;
+	  		background-color:rgb(239,73,37);
+	  		color: white;
+	  		padding:10px;
+
+	  	}
+	  	#main-body{
+	  		background-color: black;
+	  	}
+	  	#picker-div{
+	  		padding: 40px;
+	  		width: 15%;
+	  		margin: auto;
+	  	}
+	  	
+	  </style>
+
+	</head>
+
+	<body id="main-body">
+		<header id="main-header">
+			<h1>Filestack Picker</h1>
+	</header>
+
+
+	<div id="picker-div">
+			<button id="open">Upload a File	</button>
+			<button id="close">Close Picker</button>
+	</div>
+	
+	<div
+		 id="inline" style="width:600px;height:500px;padding:20px;margin:auto;">
+	</div>
+
+	<script src="https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+	<script src="fsPicker.js"></script>	
+
+	<input type='file' onchange="readURL(this);" />
+    <img id="blah" src="#" alt="your image" />
+
+
+
+	<div>
+
+	</div>
+
+	<pre id="response" style="padding:10px;border:1px solid red;background:#ccc"></pre>
+    <div id="content">
+
+    </div>
+  
+
+
+
+
+
+	</body>
+</html>
