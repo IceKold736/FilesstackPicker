@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function getURL(response)
     {
-    	let filesUploaded = '<h2>Files Uploaded:</h2>';
+    	let filesUploaded = '<h2><br>Files Uploaded:</br></h2>';
     	for (var i = 0 ; i <= response.filesUploaded.length -1; i++)
     	 {
     	 	fileType = detectFile(response.filesUploaded[i]);
