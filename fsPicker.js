@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
     	 		filesUploaded +=`
     		
     			<li> 
-    				<a target="_blank" href="${response.filesUploaded[i].url}" download>
+    				<a target="_blank" href="${response.filesUploaded[i].url}?dl=true">
     					${response.filesUploaded[i].filename}     					 
     				</a>
     			</li>
